@@ -4,3 +4,22 @@ body,
     height: 100%;
     margin: 0;
 }
+
+section {
+    height: 400px;
+    width: 700px;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto 200px auto;
+    grid-template-columns: auto auto;
+}
+
+/*
+4. Элементы располагаются в три строки, первая и третья занимают одинаковое место по оси Y, вторая - 200px
+5. Элементы располагаются в два столбца одинаковой ширины
+*/
+
+div {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #daa520;
+}
